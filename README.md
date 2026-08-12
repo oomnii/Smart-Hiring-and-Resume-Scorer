@@ -1,11 +1,5 @@
 # ScreenerAI — Intelligent Resume Screening Tool
 
-
-# An AI driven Platform
-
-
-> Editorial Terminal Noir · AI-driven resume analysis & candidate ranking
-
 ## Quick Start (Local Dev)
 
 ### 1. Backend Setup
