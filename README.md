@@ -4,7 +4,7 @@
 # An AI driven Platform
 
 
-> Editorial Terminal Noir · AI-driven resume analysis & candidate ranking
+> Editorial Terminal · AI-driven resume analysis & candidate ranking
 
 ## Quick Start (Local Dev)
 
