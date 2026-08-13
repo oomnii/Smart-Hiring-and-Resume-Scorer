@@ -1,4 +1,8 @@
-# ScreenerAI — Intelligent Resume Screening Tool
+# ScreenerAI - Intelligent Resume Screening Tool
+ScreenerAI is an AI-assisted resume screening platform. Recruiters post a job description, upload resumes and receive
+ranked results with explanations. Candidates upload a resume, apply to public jobs, receive match feedback and use
+resume/GitHub insights. Admins view system analytics.
+
 ## 📊 Estimated Impact
 
 ### Assumptions
