@@ -1,4 +1,95 @@
 # ScreenerAI — Intelligent Resume Screening Tool
+## 📊 Estimated Impact
+
+### Assumptions
+
+The following scenario estimates the screening process for **100 resumes**:
+
+- Manual screening time: **6 minutes per resume**
+- ScreenerAI setup and upload time: **15 minutes**
+- Candidates shortlisted by ScreenerAI: **Top 20**
+- Recruiter verification time: **4 minutes per shortlisted resume**
+
+### Calculations
+
+#### 1. Manual Screening Time
+
+```text
+Manual Time = Total Resumes × Time per Resume
+            = 100 × 6
+            = 600 minutes
+            = 10 hours
+```
+
+#### 2. ScreenerAI-Assisted Screening Time
+
+```text
+Assisted Time = Setup Time + (Shortlisted Resumes × Verification Time)
+              = 15 + (20 × 4)
+              = 95 minutes
+              = 1.58 hours
+```
+
+#### 3. Total Time Saved
+
+```text
+Time Saved = Manual Time - Assisted Time
+           = 600 - 95
+           = 505 minutes
+           = 8.42 hours
+```
+
+#### 4. Percentage Reduction in Screening Time
+
+```text
+Time Reduction = (Time Saved ÷ Manual Time) × 100
+               = (505 ÷ 600) × 100
+               = 84.2%
+```
+
+#### 5. Screening Capacity Improvement
+
+```text
+Manual Capacity = Total Resumes ÷ Manual Time
+                = 100 ÷ 10
+                = 10 resumes/hour
+
+ScreenerAI-Assisted Capacity = Total Resumes ÷ Assisted Time
+                             = 100 ÷ 1.58
+                             = 63.3 resumes/hour
+
+Capacity Improvement = Assisted Capacity ÷ Manual Capacity
+                     = 63.3 ÷ 10
+                     = 6.3×
+```
+
+#### 6. Manual Workload Reduction
+
+```text
+Workload Reduction = ((Total Resumes - Shortlisted Resumes) ÷ Total Resumes) × 100
+                   = ((100 - 20) ÷ 100) × 100
+                   = 80%
+```
+
+### Final Results
+
+| Metric | Manual Process | ScreenerAI-Assisted | Estimated Impact |
+|---|---:|---:|---:|
+| Recruiter active time | 10 hours | 1.58 hours | **84.2% reduction** |
+| Time saved per 100 resumes | — | 8.42 hours | **505 minutes saved** |
+| Screening capacity | 10 resumes/hour | 63.3 resumes/hour | **6.3× higher** |
+| Resumes manually reviewed | 100 | 20 shortlisted | **80% less workload** |
+| Evaluation method | Reviewer-dependent | Same five-factor formula | **Consistent first-pass scoring** |
+
+### Technical Results
+
+- Generates explainable **0–100 match scores** using five weighted factors.
+- Uses **384-dimensional MiniLM embeddings** with cosine similarity.
+- Supports **PDF, DOCX, and TXT** resume formats.
+- Provides separate workflows for **Admin, Recruiter, and Candidate** roles.
+- Runs the primary scoring pipeline locally without requiring a paid AI API.
+
+> **Note:** These figures are scenario-based estimates of recruiter active time, not measured production benchmarks. Actual results depend on resume volume, shortlist size, hardware, and recruiter workflow.
 
 ## Quick Start (Local Dev)
 
